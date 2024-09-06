@@ -1,3 +1,5 @@
+import os
+
 from llama_index.core.workflow import (
     Event,
     StartEvent,
@@ -11,7 +13,7 @@ from llama_index.core.workflow import (
 from llama_index.llms.huggingface import HuggingFaceLLM
 
 
-HUGGING_FACE_TOKEN = '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'
+HUGGING_FACE_TOKEN = os.getenv('HF_TOKEN')
 
 
 class JokeEvent(Event):
