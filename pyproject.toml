@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rag-service"
+version = "0.1.0"
+description = "This project enables the user to create workflows with llama agents with AI architecture of RAG."
+authors = ["Ritesh Ramchandani <riteshramchandani123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11.7"
+llama-index-llms-huggingface = "^0.3.1"
+llama-index-utils-workflow = "^0.2.1"
+pydantic = "2.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+setup = 'scripts.setup:main'
