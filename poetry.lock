@@ -1275,6 +1275,21 @@ torch = ">=2.1.2,<3.0.0"
 transformers = {version = ">=4.37.0,<5.0.0", extras = ["torch"]}
 
 [[package]]
+name = "llama-index-llms-ollama"
+version = "0.3.1"
+description = "llama-index llms ollama integration"
+optional = false
+python-versions = "<4.0,>=3.8.1"
+files = [
+    {file = "llama_index_llms_ollama-0.3.1-py3-none-any.whl", hash = "sha256:951d64a7eec04ecb9bd9113d33378ee8969b6eb689b485d8f7facea780d1be34"},
+    {file = "llama_index_llms_ollama-0.3.1.tar.gz", hash = "sha256:f1f1d1fe9e87d0b3790599e8d25133e9eb7e86045519827dc081df34b5ef7034"},
+]
+
+[package.dependencies]
+llama-index-core = ">=0.11.0,<0.12.0"
+ollama = ">=0.3.0"
+
+[[package]]
 name = "llama-index-llms-openai"
 version = "0.2.3"
 description = "llama-index llms openai integration"
@@ -1873,6 +1888,20 @@ files = [
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-manylinux1_x86_64.whl", hash = "sha256:dc21cf308ca5691e7c04d962e213f8a4aa9bbfa23d95412f452254c2caeb09e5"},
     {file = "nvidia_nvtx_cu12-12.1.105-py3-none-win_amd64.whl", hash = "sha256:65f4d98982b31b60026e0e6de73fbdfc09d08a96f4656dd3665ca616a11e1e82"},
 ]
+
+[[package]]
+name = "ollama"
+version = "0.3.2"
+description = "The official Python client for Ollama."
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "ollama-0.3.2-py3-none-any.whl", hash = "sha256:ed2a6f752bd91c49b477d84a259c5657785d7777689d4a27ffe0a4d5b5dd3cae"},
+    {file = "ollama-0.3.2.tar.gz", hash = "sha256:7deb3287cdefa1c39cc046163096f8597b83f59ca31a1f8ae78e71eccb7af95f"},
+]
+
+[package.dependencies]
+httpx = ">=0.27.0,<0.28.0"
 
 [[package]]
 name = "openai"
@@ -3690,4 +3719,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11.7"
-content-hash = "07090862107ecc1e45c2d1bbd58810524b9051c421d9c3e0065079d353062cd5"
+content-hash = "4978171cc5847c52cfee7dd44ed32b74dc8821c84571069ac88587b38c9c4ec1"
